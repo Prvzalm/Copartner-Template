@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/generate-otp", {
+      const response = await fetch("/generate-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

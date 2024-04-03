@@ -13,7 +13,7 @@ const OTP = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/verify-otp", {
+      const response = await fetch("/verify-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const OTP = () => {
     <div className="popup-overlay">
       <div className="login-popup">
         <div className="w-full h-full flex items-center justify-center">
-          <div className="w-[340px] h-[400px] bg-[#06030E] border border-[#18181B] rounded-[10px] px-6 flex flex-col gap-[2rem] justify-evenly">
+          <div className="w-[340px] h-[300px] bg-[#06030E] border border-[#18181B] rounded-[10px] px-6 flex flex-col gap-[2rem] justify-around">
             <div className="w-[293px] h-[60px] flex flex-col items-center text-center text-lightWhite mx-auto">
               <button onClick={handleClose} className="ms-auto">
                 <img className="w-6 h-6" src={close} alt="close" />
