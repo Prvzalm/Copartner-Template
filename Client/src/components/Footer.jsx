@@ -1,5 +1,6 @@
 import React from "react";
 import { logo, facebook, linkedin, twitter, instagram } from "../assets";
+
 const ProductList = [
   "About Us",
   "FAQ's",
@@ -20,16 +21,10 @@ const Footer = () => {
         The Copartner Portal offers traders a seamless experience, providing easy access to essential tools, resources and community support, empowering them to navigate the markets with confidence and ease.
         </span>
         <div className="flex gap-7 rounded-full">
-          <a href="">
-            <img src={facebook} alt="Facebook" className="w-8" />
-          </a>
-          <a href="">
+          <a href="https://in.linkedin.com/company/copartnerindia">
             <img src={linkedin} alt="LinkeDin" className="w-8" />
           </a>
-          <a href="">
-            <img src={twitter} alt="Twitter" className="w-8" />
-          </a>
-          <a href="">
+          <a href="https://www.instagram.com/copartner.in">
             <img src={instagram} alt="Instagram" className="w-8" />
           </a>
         </div>

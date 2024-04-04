@@ -1,8 +1,8 @@
 import logo from './copartner.png';
 import userImg from './userImg.png';
 import userBck from './userBck.png';
-import arrowLeft from './leftArrow.png';
-import arrowRight from './rightArrow.png';
+import arrowLeft from './leftArrow.svg';
+import arrowRight from './rightArrow.svg';
 import facebook from './facebook.png';
 import telegram from './telegram.png';
 import instagram from './instagram.png';
@@ -24,7 +24,10 @@ import img7 from './image7.png';
 import img8 from './image8.png';
 import tick from './Vector.png';
 import close from './close.png';
-import optionEmpire from './RA - fx forex png-02.png'
+import optionEmpire from './RA - fx forex png-02.png';
+import Samay from './Samayavif.png';
+import Ritik from './Ritik.png';
+import Paridhi from './paridhi.png';
 
 export {
     logo,
@@ -53,5 +56,8 @@ export {
     img8, 
     tick,
     close,
-    optionEmpire
+    optionEmpire,
+    Samay,
+    Ritik,
+    Paridhi
 }
