@@ -84,3 +84,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   pointer-events: auto; /* Enable interactions for the popup content */
 }
+
+.bg-image-rays {
+  background-image: url('./assets/userBck.png');
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: center 1rem;
+}
