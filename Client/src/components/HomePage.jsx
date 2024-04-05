@@ -20,7 +20,7 @@ const HomePage = ({ token }) => {
         {commodity_data.map((commodity) => {
           return (
             <div key={commodity.id}>
-              <div className="md:w-[461px] mb-4 justify-between md:h-[80px] sm:w-[361px] sm:h-[80px] rounded-[11px] py-2 relative flex flex-row items-center bg-[#18181B] opacity[50%] pe-2">
+              <div className="md:w-[461px] mb-4 justify-around md:h-[80px] sm:w-[361px] sm:h-[140px] rounded-[11px] py-2 relative flex flex-row items-center bg-[#18181B] pe-2">
                 <div className="flex items-center">
                   <div className="w-[95px] h-[70px] md:w-[136px] md:h-[66px] relative profile-image mb-2 flex items-center justify-center">
                     <img
@@ -34,7 +34,9 @@ const HomePage = ({ token }) => {
                       className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
                     />
                   </div>
-                  <div className="flex flex-col gap-1 justify-between">
+                </div>
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-col justify-between">
                     <h1 className="text-lightWhite font-[500] text-[14px] leading-[16px]">
                       {commodity.userName}
                     </h1>
@@ -42,11 +44,12 @@ const HomePage = ({ token }) => {
                       {commodity.commodity}
                     </span>
                   </div>
-                </div>
-                <div className="flex flex-col gap-2 text-center">
+                  <div className="text-dimWhite text-[8px]">
+                    Channel: {commodity.channelName}
+                  </div>
                   <button
                     onClick={() => handleClickLink(commodity.link)}
-                    className="w-[140px] h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-2 md:mt-0"
+                    className="h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-1"
                   >
                     <div className="flex justify-center items-center gap-1">
                       <img
@@ -54,7 +57,7 @@ const HomePage = ({ token }) => {
                         alt="Telegram"
                         className="w-[16px] h-[16px]"
                       />
-                      <span className="text-lightWhite flex items-center font-[400] text-[10px] leading-[19px] h-[13px]">
+                      <span className="text-lightWhite flex items-center font-[400] text-[11px] leading-[19px] h-[13px]">
                         {commodity.joinBtn}
                       </span>
                       <img
@@ -64,42 +67,42 @@ const HomePage = ({ token }) => {
                       />
                     </div>
                   </button>
-                  <div className="text-dimWhite text-[7px]">
-                    {commodity.channelName}
-                  </div>
                 </div>
-                <span className="text-dimWhite font-[400] absolute top-1 left-2 text-[11px] leading-[13px]">
-                      SEBI :- {commodity.RegNum}
+                <span className="text-dimWhite font-[400] absolute bottom-1.5 left-2 text-[11px] leading-[13px]">
+                  SEBI :- {commodity.RegNum}
                 </span>
               </div>
               <div className="relative">
-                <div className="md:w-[461px] opacity-50 justify-between md:h-[80px] sm:w-[361px] sm:h-[80px] rounded-[11px] py-2 relative flex flex-row items-center bg-[#18181B] opacity[50%] pe-2">
-                  <div className="flex items-center">
-                    <div className="w-[95px] h-[70px] md:w-[136px] md:h-[66px] relative profile-image mb-2 flex items-center justify-center">
-                      <img
-                        src={commodity.icon}
-                        alt="background"
-                        className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
-                      />
-                      <img
-                        src={userImg}
-                        alt="User"
-                        className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1 justify-between">
-                      <h1 className="text-lightWhite font-[500] text-[14px] leading-[16px]">
-                        Varun Kumar
-                      </h1>
-                      <span className="text-dimWhite font-[400] text-[11px] leading-[13px]">
-                        {commodity.commodity}
-                      </span>
-                    </div>
+              <div className="md:w-[461px] mb-4 justify-around md:h-[80px] sm:w-[361px] sm:h-[140px] rounded-[11px] py-2 relative flex flex-row items-center bg-[#18181B] opacity-[50%] pe-2">
+                <div className="flex items-center">
+                  <div className="w-[95px] h-[70px] md:w-[136px] md:h-[66px] relative profile-image mb-2 flex items-center justify-center">
+                    <img
+                      src={commodity.icon}
+                      alt="background"
+                      className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
+                    />
+                    <img
+                      src={userImg}
+                      alt="User"
+                      className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
+                    />
                   </div>
-
+                </div>
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-col justify-between">
+                    <h1 className="text-lightWhite font-[500] text-[14px] leading-[16px]">
+                      Arun Kumar
+                    </h1>
+                    <span className="text-dimWhite font-[400] text-[11px] leading-[13px]">
+                      {commodity.commodity}
+                    </span>
+                  </div>
+                  <div className="text-dimWhite text-[8px]">
+                    Channel: ChannelName
+                  </div>
                   <button
                     onClick={() => handleClickLink(commodity.link)}
-                    className="w-[140px] h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-2 md:mt-0"
+                    className="h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-1"
                   >
                     <div className="flex justify-center items-center gap-1">
                       <img
@@ -118,6 +121,7 @@ const HomePage = ({ token }) => {
                     </div>
                   </button>
                 </div>
+              </div>
                 <div className="text-white absolute text-3xl top-1/4 left-1/4">
                   Coming Soon...
                 </div>
