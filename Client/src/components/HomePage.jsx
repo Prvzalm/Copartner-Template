@@ -73,55 +73,55 @@ const HomePage = ({ token }) => {
                 </span>
               </div>
               <div className="relative">
-              <div className="md:w-[461px] mb-4 justify-around md:h-[80px] sm:w-[361px] sm:h-[140px] rounded-[11px] py-2 relative flex flex-row items-center bg-[#18181B] opacity-[50%] pe-2">
-                <div className="flex items-center">
-                  <div className="w-[95px] h-[70px] md:w-[136px] md:h-[66px] relative profile-image mb-2 flex items-center justify-center">
-                    <img
-                      src={commodity.icon}
-                      alt="background"
-                      className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
-                    />
-                    <img
-                      src={userImg}
-                      alt="User"
-                      className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <div className="flex flex-col justify-between">
-                    <h1 className="text-lightWhite font-[500] text-[14px] leading-[16px]">
-                      Arun Kumar
-                    </h1>
-                    <span className="text-dimWhite font-[400] text-[11px] leading-[13px]">
-                      {commodity.commodity}
-                    </span>
-                  </div>
-                  <div className="text-dimWhite text-[8px]">
-                    Channel: ChannelName
-                  </div>
-                  <button
-                    onClick={() => handleClickLink(commodity.link)}
-                    className="h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-1"
-                  >
-                    <div className="flex justify-center items-center gap-1">
+                <div className="md:w-[461px] mb-4 justify-around pointer-events-none md:h-[80px] sm:w-[361px] sm:h-[140px] rounded-[11px] py-2 relative flex flex-row items-center bg-[#18181B] opacity-[50%] pe-2">
+                  <div className="flex items-center">
+                    <div className="w-[95px] h-[70px] md:w-[136px] md:h-[66px] relative profile-image mb-2 flex items-center justify-center">
                       <img
-                        src={commodity.telegramIcon}
-                        alt="Telegram"
-                        className="w-[16px] h-[16px]"
+                        src={commodity.icon}
+                        alt="background"
+                        className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
                       />
-                      <span className="text-lightWhite flex items-center font-[400] text-[10px] leading-[19px] h-[13px]">
-                        {commodity.joinBtn}
-                      </span>
                       <img
-                        src={commodity.arrow}
-                        alt="arrow"
-                        className="w-[11px] h-[11px]"
+                        src={userImg}
+                        alt="User"
+                        className="absolute top-0 left-0 w-full h-full object-contain rounded-t-[11px]"
                       />
                     </div>
-                  </button>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-col justify-between">
+                      <h1 className="text-lightWhite font-[500] text-[14px] leading-[16px]">
+                        Arun Kumar
+                      </h1>
+                      <span className="text-dimWhite font-[400] text-[11px] leading-[13px]">
+                        {commodity.commodity}
+                      </span>
+                    </div>
+                    <div className="text-dimWhite text-[8px]">
+                      Channel: ChannelName
+                    </div>
+                    <button
+                      onClick={() => handleClickLink(commodity.link)}
+                      className="h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-1"
+                    >
+                      <div className="flex justify-center items-center gap-1">
+                        <img
+                          src={commodity.telegramIcon}
+                          alt="Telegram"
+                          className="w-[16px] h-[16px]"
+                        />
+                        <span className="text-lightWhite flex items-center font-[400] text-[10px] leading-[19px] h-[13px]">
+                          {commodity.joinBtn}
+                        </span>
+                        <img
+                          src={commodity.arrow}
+                          alt="arrow"
+                          className="w-[11px] h-[11px]"
+                        />
+                      </div>
+                    </button>
+                  </div>
                 </div>
-              </div>
                 <div className="text-white absolute text-3xl top-1/4 left-1/4">
                   Coming Soon...
                 </div>
