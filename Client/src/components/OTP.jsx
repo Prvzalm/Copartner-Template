@@ -71,7 +71,7 @@ const OTP = () => {
                 onClick={handleSubmit}
                 className="w-[290px] h-[50px] bg-white font-[500] text-[16px] leading-[20px] text-center rounded-[10px]"
               >
-                Continue
+                Join!
               </button>
             </div>
           </div>
